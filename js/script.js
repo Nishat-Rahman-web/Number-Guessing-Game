@@ -1,23 +1,26 @@
-const player = document.querySelector(".player");
-const game_img = document.querySelector(".game-img");
-const win_img = document.querySelector(".win-img");
+// ===================common=====================
+let player = document.querySelector(".player");
+let game_img = document.querySelector(".game-img");
+let win_img = document.querySelector(".win-img");
 
-const player_one = document.querySelector(".player-one");
-const player_one_input = document.querySelector(".player-one-input");
-const player_one_err = document.querySelector(".player-one-err");
-const player_one_btn = document.querySelector(".player-one-btn");
+// // ================player one=================
+let player_one = document.querySelector(".player-one");
+let player_one_input = document.querySelector(".player-one-input");
+let player_one_err = document.querySelector(".player-one-err");
+let player_one_btn = document.querySelector(".player-one-btn");
 
-const player_two = document.querySelector(".player-two");
-const player_two_input = document.querySelector(".player-two-input");
-const player_two_err = document.querySelector(".player-two-err");
-const player_two_btn = document.querySelector(".player-two-btn");
-
-const chance_main = document.querySelector(".chance-main");
-const chance = document.querySelector(".chance");
+// // ================player two=================
+let player_two = document.querySelector(".player-two");
+let player_two_input = document.querySelector(".player-two-input");
+let player_two_err = document.querySelector(".player-two-err");
+let player_two_btn = document.querySelector(".player-two-btn");
+// // ==================chance====================
+let chance_main = document.querySelector(".chance-main");
+let chance = document.querySelector(".chance");
 let count = 5;
-const restart = document.querySelector(".restart");
-
-player_one_btn.addEventListener("click", function () {
+let restart = document.querySelector(".restart");
+// ================player one start=================
+player_one_btn.addEventListener("click", ()=>{
   if (player_one_input.value == '') {
     player_one_err.innerHTML = 'Please enter a number';
   }
@@ -31,8 +34,10 @@ player_one_btn.addEventListener("click", function () {
     player_one_err.innerHTML = "Number must be between 0 and 20.";
   }
 });
+// ================player one end===================
 
-player_two_btn.addEventListener("click", function () {
+// ================player two start=================
+player_two_btn.addEventListener("click", ()=>{
   if (player_two_input.value >= 0 && player_two_input.value <= 20) {
     player_two_err.innerHTML = "";
     if (count !== 1) {
@@ -48,10 +53,12 @@ player_two_btn.addEventListener("click", function () {
         game_img.style.display = "none";
         win_img.style.display = "block";
         restart.style.display = "block";
-      } else {
+      }
+      else {
         chance.innerHTML = count;
       }
-    } else {
+    }
+    else {
       player.style.color = "green";
       player_two_err.innerHTML = "";
       player.innerHTML = "Opps! Player one winner";
@@ -62,11 +69,15 @@ player_two_btn.addEventListener("click", function () {
       win_img.style.display = "block";
       restart.style.display = "block";
     }
-  } else {
+  } 
+  else {
     player_two_err.innerHTML = "Number must be between 0 and 20.";
   }
 });
+// ================player two end=================
 
-restart.addEventListener("click", function () {
+// ==================restart start================
+restart.addEventListener("click", ()=>{
   location.reload();
 });
+// ==================restart end==================
