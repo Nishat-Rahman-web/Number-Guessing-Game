@@ -3,18 +3,18 @@ let player = document.querySelector(".player");
 let game_img = document.querySelector(".game-img");
 let win_img = document.querySelector(".win-img");
 
-// // ================player one=================
+// ================player one=================
 let player_one = document.querySelector(".player-one");
 let player_one_input = document.querySelector(".player-one-input");
 let player_one_err = document.querySelector(".player-one-err");
 let player_one_btn = document.querySelector(".player-one-btn");
 
-// // ================player two=================
+// ================player two=================
 let player_two = document.querySelector(".player-two");
 let player_two_input = document.querySelector(".player-two-input");
 let player_two_err = document.querySelector(".player-two-err");
 let player_two_btn = document.querySelector(".player-two-btn");
-// // ==================chance====================
+// ==================chance====================
 let chance_main = document.querySelector(".chance-main");
 let chance = document.querySelector(".chance");
 let count = 5;
