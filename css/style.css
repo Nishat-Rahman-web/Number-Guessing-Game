@@ -11,43 +11,43 @@ body {
 }
 
 #main {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .box {
-  background-color: #bcc6cc;
   width: 400px;
+  background-color: #bcc6cc;
   margin: 150px auto;
   border-radius: 10px;
 }
 
 h1 {
   background-color: #151b54;
+  color: #fff;
   text-align: center;
   padding: 20px;
-  color: #fff;
   border-radius: 10px 0 10px 0;
   font-weight: 700;
 }
 
 .box .box-img {
-  margin: 15px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 15px 0;
 }
 
 .box-img img {
-  height: 200px;
   width: 270px;
+  height: 200px;
 }
 
 .box-img img.win-img {
-  height: 200px;
   width: 220px;
+  height: 200px;
 }
 
 .win-img {
@@ -61,24 +61,24 @@ h1 {
 }
 
 .player-one,.player-two {
-  padding: 15px 50px;
   text-align: center;
+  padding: 15px 50px;
 }
 
 .player-one-input,.player-two-input {
-  padding: 10px 20px;
   width: 100%;
-  border-radius: 10px;
   color: #823eca;
+  padding: 10px 20px;
+  border-radius: 10px;
   border: 2px solid #151b54;
   font-size: 16px;
 }
 
 .player-one-err,.player-two-err {
   color: red;
+  font-weight: 500;
   font-size: 16px;
   padding: 8px 0;
-  font-weight: 500;
 }
 .player-one-btn,.player-two-btn,.restart {
   padding: 8px 40px;
@@ -98,8 +98,8 @@ h1 {
 }
 
 .player-two h3 {
-  padding-bottom: 15px;
   color: #151b54;
+  padding-bottom: 15px;
 }
 
 .restart {
