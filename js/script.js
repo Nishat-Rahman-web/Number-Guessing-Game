@@ -1,4 +1,4 @@
-// ===================common=====================
+// ====================common======================
 let player = document.querySelector(".player");
 let game_img = document.querySelector(".game-img");
 let win_img = document.querySelector(".win-img");
